@@ -6,5 +6,9 @@
     <p>Artist: {{song.artist}}</p>
     <p>Memory: {{song.memory}}</p>
 </div>
+<div class="card-action">
+    <a href="{% url 'songs_update' song.id %}">Edit</a>
+    <a href="{% url 'songs_delete' song.id %}">Delete</a>
+  </div>
 
 {% endblock %}
