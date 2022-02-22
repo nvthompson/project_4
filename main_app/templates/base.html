@@ -13,14 +13,23 @@
   <body>
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <nav>
-        <div >
+        
               <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">  Music Man </a>
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li ><a href="{% url 'about' %}"   class="nav-link px-2 link-secondary">About</a></li>
+            {% if user.is_authenticated %}
             <li ><a href="{% url 'index' %}"   class="nav-link px-2 link-secondary">View My Songs</a></li>
             <li ><a href="{% url 'songs_create' %}"   class="nav-link px-2 link-secondary">Add a Song</a></li>
+            <a href="{% url 'logout' %}"><button type="button" class="btn btn-outline-primary me-2">Logout</button></a>
           </ul>
-        </div>
+          <div class="col-md-3 text-end">
+            {% else %}
+            <a href="{% url 'login' %}"><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
+            <a href="{% url 'signup' %}"><button type="button" class="btn btn-primary">Sign-up</button></a>
+            {% endif %}
+          
+          </div>
+        
       </nav>
     </header>
     <main class="container">{% block content %} {% endblock %}</main>
