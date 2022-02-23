@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class Song(models.Model):
     title = models.CharField(max_length=50)
     artist = models.CharField(max_length=50)
-    memory = models.CharField(max_length=1000)
+    memory = models.TextField(max_length=1000)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):

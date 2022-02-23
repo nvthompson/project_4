@@ -3,10 +3,18 @@
 
 {% for song in songs %}
 <a href="{% url 'detail' song.id %}">
-    <div>
-        <span>{{song.title}}</span>
-        <p>Artist: {{song.artist}}</p>
-        <p>Memory: {{song.memory}}</p>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shawdow-sm">
+                        <div class="card-body">
+                            <span>{{song.title}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </a>
 

@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}  {% block content %}
 
 {% if object %}
 <h1>Edit <span>{{object.name}}</span></h1>
@@ -6,11 +6,11 @@
 <h1>Add Song</h1>
 {% endif %}
 
-<form action="" method="post">
+<form action="" method="post" >
   {% csrf_token %}
   <table>
     {{ form.as_table }}
   </table>
-  <input type="submit" value="Add" class="btn" />
+  <input type="submit" value="Add" class="w-10 btn btn-lg btn-primary" />
 </form>
 {% endblock %}

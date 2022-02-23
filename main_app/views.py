@@ -30,7 +30,7 @@ def about(request):
 
 @login_required
 def songs_index(request):
-  songs = Song.filter(user=request.user)
+  songs = Song.objects.filter(user=request.user)
   return render(request, 'songs/index.html', {'songs': songs})
 
 @login_required
