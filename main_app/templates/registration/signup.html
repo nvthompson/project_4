@@ -10,7 +10,7 @@
 
 <form method="post" action="{% url 'signup' %}">
   {% csrf_token %} {{ form.as_p }}
-  <input type="submit" class="w-10 btn btn-lg btn-primary" value="Sign Up" />
+  <input type="submit" class="w-10 btn btn-lg btn-warning" value="Sign Up" />
 </form>
 
 {% endblock %}
