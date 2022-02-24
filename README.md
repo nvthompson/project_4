@@ -21,6 +21,6 @@ Click [Here](https://musicman-project4.herokuapp.com/) to launch the app!
 
 ## Future Enhancements
 
-- Implemented an API
+- Implementing an API
 
 
