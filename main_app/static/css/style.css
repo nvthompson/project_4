@@ -14,13 +14,15 @@ main {
     flex-grow: 1;
   }
   
-footer {
-    padding-top: 0;
-    text-align: center;
-    margin: 1;
+footer > div > span.text-muted {
+   left: 1;
   }
 
 .icons{
   display: flex;
   flex-wrap: wrap;
+}
+
+header{
+  background-color: rgb(244, 214, 44);
 }

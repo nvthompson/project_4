@@ -1,12 +1,34 @@
 {% extends 'base.html' %} {% block content %}
 <h1>About Music Man</h1>
-<hr/>
-<h3>Created by Nicole Thompson</h3>
-<div class="icons">
-<h3 class="iconSize">
-    <a href="https://www.linkedin.com/in/nicole-thompson32/"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"alt=""></a>
-    <a href="https://github.com/nvthompson"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" className="githubIcon"/></a>
-</h3>
+<hr />
+<div class="about">
+    <img src="https://media1.giphy.com/media/cgW5iwX0e37qg/giphy.gif?cid=790b7611787d0f551929ff5a57301d751009067bd0285305&rid=giphy.gif&ct=g"
+        alt="">
+        <br/>
+        <br/>
+    <h4>Created by Nicole Thompson</h4>
+    <div class="icons">
+        <h3 class="iconSize">
+            <a href="https://www.linkedin.com/in/nicole-thompson32/"><img
+                    src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt=""></a>
+            <a href="https://github.com/nvthompson"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+                    className="githubIcon" /></a>
+        </h3>
+    </div>
 </div>
 
+<style>
+    h4 {
+        color: rgb(208, 177, 3);
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+   
+</style>
 {% endblock %}

@@ -9,6 +9,14 @@
 <form action="" method="POST">
   {% csrf_token %}
   <input type="submit" value="Yes - Delete!" class="btn-danger" />
-  <a href="{% url 'detail' song.id %}" >Cancel</a>
+  <a href="{% url 'detail' song.id %}" class="cancel">Cancel</a>
 </form>
+
+<style>
+    .cancel{
+        text-decoration: none;
+        color: inherit;
+        color: rgb(208, 177, 3);
+    }
+</style>
 {% endblock %}
