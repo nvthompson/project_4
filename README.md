@@ -1,6 +1,6 @@
 # Music Man
 
-An
+An app that allows users to log their favorite songs and the memories they made from them.
 
 ## Technologies Used
 
@@ -12,19 +12,15 @@ An
 
 ## Screenshots
 
-![Imgur]()
-![Imgur]()
+![Imgur](https://imgur.com/yMfeaIc)
+![Imgur](https://imgur.com/ikoFzQZ)
 
 ## Getting Started
 
-Click [Here]() to launch the app!
-
-## Unsolved Errors
-
-- 
+Click [Here](https://musicman-project4.herokuapp.com/) to launch the app!
 
 ## Future Enhancements
 
-- An api that allows the user the option to search through a variety of different books.
+- Implemented an API
 
 
