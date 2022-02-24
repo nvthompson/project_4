@@ -12,8 +12,8 @@ An app that allows users to log their favorite songs and the memories they made 
 
 ## Screenshots
 
-![Imgur](https://imgur.com/yMfeaIc)
-![Imgur](https://imgur.com/ikoFzQZ)
+![Imgur](https://imgur.com/yMfeaIc.png)
+![Imgur](https://imgur.com/ikoFzQZ.png)
 
 ## Getting Started
 
